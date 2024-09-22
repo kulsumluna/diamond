@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.body{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Norican', cursive;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+    background-color:#dddee8 ;
+    
+}
+/* background arear kaj  */
+
+/* ai khane navigration are kaj kora hoyece */
+nav{
+ width: 100%;
+ height: 80px;
+ background: rgb(243, 242, 246);
+ color: black;
+ display: flex;
+ justify-content:space-between ;
+ align-items: center;
+ padding: 0px 80px;
+ position: fixed;    
+ top: 0;
+z-index: 999;
+}
+/* nave are vitorer menu item are kaj kora hoyece */
+.service a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+ 
+}
+/* home hoto first child  */
+.service a:nth-child(4){
+    color:#f7620c; 
+} 
+/* hover means color effect */
+.service a:hover{
+    color: #f7620c;
+}
+.icon i{
+    font-size: 20px ;
+}
+.icon i:hover{
+    color: #ec5d0b;
+}
+/* book now icon are kaj */
+.icon a{
+    text-decoration: none;
+    background: #682d0b;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.icon a:hover{
+    background-color: rgb(184, 32, 32);
+    color: rgb(255, 251, 251);
+ }
+/* ai khane background are oper likha aner jonno kaj kora hoyece */
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'thin','Dancing Script', cursive;
+    /* transfrom ---ai word ti dara kono title k center a ana hoice */
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.h-text h4{
+    font-size: 1em;
+    line-height: 4em;
+   
+}
+.h-text h1{
+      font-size: 1.8em;
+      line-height: 1.5em;
+}
+
+
+.contact
+{
+   
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(11.jpg);
+background-size: cover;
+margin: auto;
+}
+.contact .content
+{ 
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+font-size: 56px;
+font-weight: 300;
+color:red;
+font-family: 'Dancing Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Norican', cursive;
+
+}
+.contact .content p
+{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Norican', cursive;
+color:#fff;
+
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+width: 50%;
+display: flex;
+flex-direction: column;
+
+}
+.container .contactInfo .box
+{
+position: relative;
+padding: 30px 0;
+display: flex;
+
+}
+.container .contactInfo .box .icon
+
+{
+ min-width: 50px;
+ height: 50px;
+ background: #fff;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 50%;
+ font-size: 22px;
+}
+ 
+.container .contactInfo .box .text
+{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: #fff;
+flex-direction: column;
+font-weight: 300;
+
+}
+.container .contactInfo .box .text h2
+{
+    font-size: 45px;
+    color:rgb(77, 206, 218);
+} 
+ .contactInfo p{
+    color: rgb(241, 251, 248);
+    font-size: 25px;
+}
+.contactForm
+{
+    width: 35%;
+    padding: 50px;
+   background: #fff;
+
+}
+
+.contactForm h2
+{
+    font-size: 50px;
+    color: #333;
+    font-weight: 500;
+
+}
+.contactForm .inputBox
+{
+position: relative;
+width: 100%;
+margin-top: 10px;
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+
+{
+    width: 100%; 
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputBox span
+{
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+
+
+{
+color:red;
+font-size: 12px;
+transform: translateY(-20px) ;
+}
+.contactForm .inputBox input[type="submit"]
+
+{
+width: 100px;
+background: #00bcD4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+
+}
+@media (max-width: 991px)
+{
+
+    .contact
+    {
+padding: 50px;
+
+    }
+.container
+{
+    flex-direction: column;
+}
+.container .contactInfo
+{
+    margin-bottom: 40px;
+}
+.container .contactInfo,
+.contactForm
+{
+    width: 100%;
+}
+.map{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+}
+iframe{
+    width:100%;
+    height:60vh;
+    margin: 10px 10px;
+    padding: 20px;
+}
+/* footer area are kaj niche theke suru holo */
+footer{
+    
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('img/bed2.jpg');
+    background-size: cover;
+    padding: 50px 100px;
+}
+.newsletter{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+    border:1px solid rgba(255,255,255,0.2);
+    color: white;
+
+}
+.newsletter >div{
+    flex-basis: 50%;
+}
+.ntext{
+    text-align: right;
+}
+.newsletter h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+   
+}
+.newsletter p{
+    font-size: 20px;
+    margin-top:10px;
+}
+.newsletter label{
+    position: relative;
+}
+.newsletter input{
+    padding: 20px;
+    width: 70%;
+    border-radius:25px;
+    border:none;
+    outline: none;
+    font-family: sans-serif;
+}
+.newsletter button{
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 30%;
+    background-color: #682d0b;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius:0 25px 25px 0 ;
+    
+}
+.f-contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    margin-top: 3em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.f-contact >div{
+    flex-basis: 10%;
+}
+.f-contact p{
+    line-height: 2em;
+    font-size: 20px;
+    
+    color: grey;
+    cursor:pointer;
+}
+.relative h3{
+    display: inline-block;
+}
+.f-contact p:hover{
+    color: white;
+}
+.f-contact i{
+
+    border-radius: 30px;
+}

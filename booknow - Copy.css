@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.main_bg{
+    background-image: url('img/book now img2.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.form{
+   width: 700px;
+   height: 700px;
+   background-color: rgb(28, 28, 28); 
+}
+.form-text{
+   text-align: center; 
+   margin: 40px 0;
+}
+.form-text h1 {
+    margin: 0 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #fff;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.form-text h1 span{
+    color: rgb(204, 204, 17);
+    font-size:50px ;
+}
+.form-text p {
+    margin: 0 10px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #fff;
+   font-size: x-large;
+    margin-bottom: 20px;
+}
+.main-form div{
+    margin: 10px 20px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input{
+   width: 100%;
+   font-family: 'Akaya Telivigala', cursive;
+   background: none;
+   border: 1px solid #ffca00;
+   font-size: 20px;
+   color: #fff;
+   outline: none;
+   padding: 3px 0 3px 10px;
+   margin-top:10px ;
+}
+.main-form div select{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+   background: rgb(38, 37, 37);
+   border: 1px solid #ffca00;
+   font-size: 20px;
+   color: rgb(249, 245, 245);
+   padding: 3px 0 3px 10px;
+   margin-top: 10px;
+   font-size: 25px;
+
+}
+.main-form div select:hover{
+
+}
+.main-form div span{
+    width: 100%;
+    font-family: 'Akaya Telivigala', cursive;
+   color: #fff;
+}
+
+#submit{
+    text-align: center;
+    width: 100%;
+  
+}
+#submit input{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color: yellow !important;
+    color: black !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: 'Akaya Telivigala', cursive;
+    width: 200px;
+    background-color:rgb(18, 17, 17) !important;
+    color: #fff !important;
+}
+#submit input:active{
+    font-size: 19px ;
+    background-color:rgb(43, 42, 42) !important;
+    color: #fff !important;
+}
